@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Responsive Contact From</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1> Contact Us</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <main class="content-area">
+            <div class="from-container">
+                <h2>send us a message</h2>
+                <form id="contactFrom" novalidate>
+                    <div class="from-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="from-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="from-group">
+                        <label for="message">message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy;2025 software pvt ltd</p>
+        </footer>
+    </div>
+</body>
+
+</html>
